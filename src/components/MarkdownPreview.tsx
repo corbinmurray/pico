@@ -1,10 +1,10 @@
+import { CodeBlock } from "@/components/CodeBlock";
 import { cn } from "@/lib/utils";
 import { useCallback, useMemo } from "react";
 import Markdown from "react-markdown";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 import { toast } from "sonner";
-import { CodeBlock } from "./CodeBlock";
 
 interface MarkdownPreviewProps {
   content: string;
