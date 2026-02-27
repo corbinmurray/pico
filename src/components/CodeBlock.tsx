@@ -16,6 +16,7 @@ import {
   a11yDark,
   oneLight,
 } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { toast } from "sonner";
 // Common Programming Languages
 import cpp from "react-syntax-highlighter/dist/esm/languages/prism/cpp";
 import go from "react-syntax-highlighter/dist/esm/languages/prism/go";
@@ -124,6 +125,7 @@ export function CodeBlock({
   const handleCopy = async () => {
     const text = String(children).replace(/\n$/, "");
     await navigator.clipboard.writeText(text);
+    toast.success("Link copied to clipboard!", { duration: 2000 });
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
   };
