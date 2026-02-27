@@ -5,8 +5,6 @@ Drop in any plain Markdown and `pico` renders it with Tailwindcss typography, ta
 code blocks, anchors, and right‑to‑left support. Editing is secondary –- the focus
 is on clean, accessible UI/UX for reading content.
 
-![screenshot](./docs/screenshot.png)
-
 ## Features
 
 - Styled output via Tailwind Typography (`prose`, dark mode, RTL)
