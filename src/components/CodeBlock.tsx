@@ -1,6 +1,6 @@
 import { Check, Copy } from "lucide-react";
 import { type ComponentPropsWithoutRef, useEffect, useState } from "react";
-import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import bash from "react-syntax-highlighter/dist/esm/languages/prism/bash";
 import csharp from "react-syntax-highlighter/dist/esm/languages/prism/csharp";
 import css from "react-syntax-highlighter/dist/esm/languages/prism/css";
@@ -40,17 +40,23 @@ import sql from "react-syntax-highlighter/dist/esm/languages/prism/sql";
 import yaml from "react-syntax-highlighter/dist/esm/languages/prism/yaml";
 
 SyntaxHighlighter.registerLanguage("bash", bash);
+SyntaxHighlighter.registerLanguage("sh", bash); // Alias
 SyntaxHighlighter.registerLanguage("csharp", csharp);
 SyntaxHighlighter.registerLanguage("c#", csharp); // Alias
 SyntaxHighlighter.registerLanguage("css", css);
 SyntaxHighlighter.registerLanguage("javascript", javascript);
+SyntaxHighlighter.registerLanguage("js", javascript); // Alias
+SyntaxHighlighter.registerLanguage("jsx", javascript); // Alias
 SyntaxHighlighter.registerLanguage("json", json);
 SyntaxHighlighter.registerLanguage("markup", markup);
 SyntaxHighlighter.registerLanguage("html", markup);
 SyntaxHighlighter.registerLanguage("xml", markup); // Alias for XML
 SyntaxHighlighter.registerLanguage("powershell", powershell);
 SyntaxHighlighter.registerLanguage("python", python);
+SyntaxHighlighter.registerLanguage("py", python); // Alias
 SyntaxHighlighter.registerLanguage("typescript", typescript);
+SyntaxHighlighter.registerLanguage("ts", typescript); // Alias
+SyntaxHighlighter.registerLanguage("tsx", typescript); // Alias
 
 // Common Programming Languages
 SyntaxHighlighter.registerLanguage("vbnet", vbnet);
