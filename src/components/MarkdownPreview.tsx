@@ -1,5 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
-import { cn } from "@/lib/utils";
+import { cn } from "@corbinmurray/ui-components";
 import { useCallback, useMemo } from "react";
 import Markdown from "react-markdown";
 import rehypeSlug from "rehype-slug";

@@ -1,10 +1,11 @@
 @import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
-@import "@fontsource-variable/outfit";
 @plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
+
+@import "tw-animate-css";
+
+@source "../node_modules/@corbinmurray/ui-components";
 
 :root {
   --background: oklch(1 0 0);

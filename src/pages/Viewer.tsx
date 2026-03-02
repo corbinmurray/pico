@@ -1,7 +1,7 @@
 import { ErrorState } from "@/components/ErrorState";
 import { MarkdownPreview } from "@/components/MarkdownPreview";
-import { Button } from "@/components/ui/button";
 import { compressionService } from "@/lib/compression";
+import { Button } from "@corbinmurray/ui-components";
 import { Copy, Edit } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";

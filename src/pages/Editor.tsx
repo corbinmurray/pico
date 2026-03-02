@@ -1,9 +1,8 @@
 import { MarkdownPreview } from "@/components/MarkdownPreview";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
 import { compressionService } from "@/lib/compression";
 import { storageService } from "@/lib/storage";
 import type { LayoutMode } from "@/lib/types";
+import { Button, Textarea } from "@corbinmurray/ui-components";
 import {
   AlertTriangle,
   PanelLeftClose,

@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { Check, Copy } from "lucide-react";
 import { type ComponentPropsWithoutRef, useEffect, useState } from "react";
 import { PrismAsyncLight as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -33,6 +31,7 @@ import scala from "react-syntax-highlighter/dist/esm/languages/prism/scala";
 import swift from "react-syntax-highlighter/dist/esm/languages/prism/swift";
 import vbnet from "react-syntax-highlighter/dist/esm/languages/prism/vbnet";
 // Data and Config Formats
+import { Button, cn } from "@corbinmurray/ui-components";
 import diff from "react-syntax-highlighter/dist/esm/languages/prism/diff";
 import docker from "react-syntax-highlighter/dist/esm/languages/prism/docker";
 import ini from "react-syntax-highlighter/dist/esm/languages/prism/ini";
