@@ -167,7 +167,7 @@ export function Editor() {
               value={markdown}
               onChange={(e) => handleMarkdownChange(e.target.value)}
               placeholder="Type your markdown here..."
-              className={`min-h-125 font-mono ring-1 ring-zinc-900/30 ${
+              className={`min-h-125 font-mono ring-1 ring-zinc-900/15 ${
                 wordWrap
                   ? "whitespace-pre-wrap"
                   : "whitespace-pre overflow-x-auto"
@@ -207,7 +207,7 @@ export function Editor() {
                 )}
               </div>
             </div>
-            <div className="rounded-md border p-4 min-h-125 bg-card ring-1 ring-zinc-900/30">
+            <div className="rounded-md border p-4 min-h-125 bg-card ring-1 ring-zinc-900/15">
               <MarkdownPreview content={markdown} />
             </div>
           </div>
