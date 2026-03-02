@@ -31,7 +31,7 @@ import scala from "react-syntax-highlighter/dist/esm/languages/prism/scala";
 import swift from "react-syntax-highlighter/dist/esm/languages/prism/swift";
 import vbnet from "react-syntax-highlighter/dist/esm/languages/prism/vbnet";
 // Data and Config Formats
-import { Button, cn } from "@corbinmurray/ui-components";
+import { Button } from "@corbinmurray/ui-components";
 import diff from "react-syntax-highlighter/dist/esm/languages/prism/diff";
 import docker from "react-syntax-highlighter/dist/esm/languages/prism/docker";
 import ini from "react-syntax-highlighter/dist/esm/languages/prism/ini";
@@ -135,11 +135,7 @@ export function CodeBlock({
         <Button
           variant="ghost"
           size="icon"
-          className={cn(
-            "absolute right-2 top-2 h-8 w-8 opacity-0 transition-opacity group-hover:opacity-100 focus:opacity-100",
-            "bg-background/50 hover:bg-background/80 backdrop-blur-sm",
-            "hover:cursor-pointer",
-          )}
+          className="absolute right-2 top-2 size-8 hover:cursor-pointer prose dark:prose-invert"
           onClick={handleCopy}
           aria-label="Copy code"
         >
